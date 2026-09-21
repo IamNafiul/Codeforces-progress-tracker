@@ -1,220 +1,365 @@
 ⚡ Codeforces Progress Tracker
 
-«A privacy-first browser extension that helps competitive programmers track, understand, and improve their Codeforces problem-solving journey.»
+<p align="center">🧠 Turn Your Practice Into Progress
 
-Chrome • Brave • Manifest V3 • Vanilla JavaScript
+A colorful, privacy-first browser extension for tracking and understanding your Codeforces journey.
 
----
+<br>"Chrome" (https://img.shields.io/badge/Chrome-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)
+"Brave" (https://img.shields.io/badge/Brave-FB542B?style=for-the-badge&logo=brave&logoColor=white)
+"JavaScript" (https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+"Manifest V3" (https://img.shields.io/badge/Manifest-V3-8A2BE2?style=for-the-badge)
 
-🎯 Why?
+</p>---
 
-When practicing Codeforces, it's easy to lose track of:
+🌟 What Is This?
 
-- How many problems you've actually attempted
-- How much time you spend on problems
-- Which topics you struggle with
-- How often you get Wrong Answer / TLE / Runtime Error
-- Whether you're actually improving over time
+Codeforces Progress Tracker is a browser extension built for competitive programmers who want to go beyond simply counting solved problems.
 
-Codeforces Progress Tracker is built to turn that practice history into useful insights.
+It transforms your Codeforces practice into meaningful insights:
+
+«📝 Practice → 📊 Track → 🧠 Analyze → 🚀 Improve»
+
+Instead of asking:
+
+"Am I actually getting better?"
+
+you can look at your own data and find out.
 
 ---
 
 ✨ Features
 
-- 📊 Track Codeforces problem-solving progress
-- ⏱️ Track time spent on problem pages
-- 📝 Track problem visits and attempts
-- 🎯 Track verdicts and submission history
-- 🏷️ Analyze problems by topic
-- 📈 View solving statistics
-- 🔥 Track practice streaks
-- 🧠 Identify frequently failed topics
-- 📝 Add personal notes and failure reasons
-- 💾 Store data locally
-- 🌙 Clean dark-mode-friendly interface
-- 🔒 Privacy-first — no account or backend required
+<table>
+<tr>
+<td width="50%">📚 Problem Tracking
 
-«Features are only listed here once they are actually implemented and tested.»
+Automatically keep track of the problems you interact with.
+
+- 🆔 Problem information
+- ⭐ Rating
+- 🏷️ Tags
+- 👀 Visits
+- ⏱️ Time spent
+- 🔄 Practice sessions
+
+</td><td width="50%">🎯 Submission Tracking
+
+Understand your submission history.
+
+- ✅ Accepted
+- ❌ Wrong Answer
+- ⏱️ Time Limit Exceeded
+- 💥 Runtime Error
+- ⚠️ Other verdicts
+
+</td>
+</tr><tr>
+<td>🧠 Failure Analysis
+
+Your mistakes become useful data.
+
+- 🔴 Common failure patterns
+- 🏷️ Difficult topics
+- 📝 Personal notes
+- 💭 Failure reasons
+- 📈 Improvement patterns
+
+</td><td>📊 Analytics
+
+Turn your practice history into insights.
+
+- 📈 Rating distribution
+- 🏷️ Topic statistics
+- 🎯 Acceptance rate
+- 🔥 Practice streak
+- ⏱️ Time analysis
+- 📋 Recent activity
+
+</td>
+</tr>
+</table>---
+
+🎨 Dashboard
+
+Your practice at a glance.
+
+╭────────────────────────────────────────────────────╮
+│                                                    │
+│   🟢 SOLVED        🔵 ATTEMPTED       🟣 STREAK    │
+│      127              184              14 days     │
+│                                                    │
+│   🟡 TIME           🔴 ACCEPTANCE     🏷️ TOPICS    │
+│   42h 18m              69%              18         │
+│                                                    │
+╰────────────────────────────────────────────────────╯
+
+The dashboard is designed to answer questions like:
+
+«What am I practicing?»
+
+«Where am I struggling?»
+
+«How much time am I spending?»
+
+«Am I becoming more consistent?»
+
+---
+
+🧩 How It Works
+
+          🌐 CODEFORCES
+                │
+                ▼
+        ┌───────────────┐
+        │ 👀 Detection  │
+        │ & Tracking    │
+        └───────┬───────┘
+                │
+                ▼
+        ┌───────────────┐
+        │ 🧠 Data Layer │
+        │ Parse & Store │
+        └───────┬───────┘
+                │
+                ▼
+        ┌───────────────┐
+        │ 💾 Local      │
+        │ Storage       │
+        └───────┬───────┘
+                │
+                ▼
+        ┌───────────────┐
+        │ 📊 Dashboard  │
+        │ & Analytics   │
+        └───────────────┘
 
 ---
 
 🛠️ Tech Stack
 
-- JavaScript
-- HTML
-- CSS
-- Chrome Extension APIs
-- Chrome Storage API
-- Manifest V3
+<p align="center">"HTML5" (https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+"CSS3" (https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+"JavaScript" (https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+"Chrome API" (https://img.shields.io/badge/Chrome_Extension_API-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)
 
-No React.
-No TypeScript.
-No backend.
-No database.
-No external server.
+</p>Architecture
+
+- 🧩 Manifest V3
+- ⚡ Vanilla JavaScript
+- 🎨 HTML + CSS
+- 💾 Chrome Storage API
+- 🔒 Local-first architecture
+
+Intentionally No
+
+❌ React
+❌ TypeScript
+❌ Backend
+❌ Database
+❌ Authentication
+❌ Unnecessary external services
 
 ---
 
 📂 Project Structure
 
-codeforces-progress-tracker/
+⚡ codeforces-progress-tracker
 │
-├── src/
-│   ├── popup/
+├── 📁 src
+│   ├── 📁 popup
 │   │   ├── popup.html
 │   │   ├── popup.css
 │   │   └── popup.js
 │   │
-│   ├── content/
+│   ├── 📁 content
 │   │   └── content.js
 │   │
-│   ├── dashboard/
+│   ├── 📁 dashboard
 │   │   ├── dashboard.html
 │   │   ├── dashboard.css
 │   │   └── dashboard.js
 │   │
-│   └── utils/
+│   └── 📁 utils
 │       ├── storage.js
 │       ├── codeforces.js
 │       └── helpers.js
 │
-├── assets/
+├── 📁 assets
 │   ├── icon16.png
 │   ├── icon48.png
 │   └── icon128.png
 │
-├── manifest.json
-└── README.md
+├── 📄 manifest.json
+└── 📄 README.md
 
 ---
 
 🚀 Installation
 
-Chrome / Brave
+🟦 Chrome
 
-1. Clone or download this repository.
-2. Open:
+1. Download / Clone this repository
+2. Open chrome://extensions/
+3. Enable Developer Mode
+4. Click "Load unpacked"
+5. Select the project folder
+6. Open Codeforces
+7. Start solving 🚀
 
-chrome://extensions/
+🟧 Brave
 
-For Brave:
-
-brave://extensions/
-
-3. Enable Developer mode.
-4. Click Load unpacked.
-5. Select the project folder containing "manifest.json".
-6. Open Codeforces and start solving.
-
----
-
-📊 Dashboard
-
-The dashboard is designed to provide a clear overview of your practice:
-
-Problems Solved
-Problems Attempted
-Total Time
-Current Streak
-Acceptance Rate
-
-Along with:
-
-- Rating distribution
-- Topic statistics
-- Verdict breakdown
-- Failure patterns
-- Recent activity
-
----
-
-🧠 Problem Data
-
-A tracked problem may contain information such as:
-
-Problem ID
-Contest ID
-Problem Index
-Problem Name
-Rating
-Tags
-Visit Count
-Time Spent
-Submission Count
-Verdict
-Status
-Notes
-Failure Reason
-Sessions
+1. Open brave://extensions/
+2. Enable Developer Mode
+3. Click "Load unpacked"
+4. Select the project folder
+5. Open Codeforces
+6. Start solving 🚀
 
 ---
 
 🔐 Privacy
 
-This project is designed with a local-first approach.
+Your data belongs to you.
 
-Your practice data is stored locally using browser storage.
+The extension follows a local-first approach.
 
-There is:
+🔒| Privacy
+🚫| No account required
+🚫| No backend server
+🚫| No external database
+🚫| No advertising
+🚫| No unnecessary tracking
+✅| Local browser storage
+✅| Minimal permissions
 
-- ❌ No account system
-- ❌ No personal-data collection
-- ❌ No external database
-- ❌ No tracking server
-- ❌ No analytics service
+Your practice history stays in your browser unless you explicitly export or share it.
 
 ---
 
 🗺️ Roadmap
 
-- [x] Extension foundation
-- [x] Codeforces page detection
-- [ ] Problem tracking
-- [ ] Automatic submission tracking
+🟢 Foundation
+
+- [x] Manifest V3
+- [x] Extension structure
+- [x] Codeforces detection
+- [x] Development setup
+
+🟡 Tracking
+
+- [ ] Problem detection
+- [ ] Problem metadata
+- [ ] Visit tracking
+- [ ] Session tracking
 - [ ] Time tracking
-- [ ] Local data storage
-- [ ] Dashboard
+- [ ] Submission detection
+- [ ] Verdict tracking
+- [ ] Local persistence
+
+🔵 Analytics
+
+- [ ] Statistics dashboard
+- [ ] Rating distribution
 - [ ] Topic analytics
-- [ ] Failure analytics
-- [ ] Streak tracking
-- [ ] Export / backup data
-- [ ] UI improvements
+- [ ] Verdict analysis
+- [ ] Failure analysis
+- [ ] Practice streak
+- [ ] Progress trends
+
+🟣 Future
+
+- [ ] Data export
+- [ ] Data backup
+- [ ] Import system
+- [ ] Advanced visualizations
+- [ ] Performance improvements
 - [ ] Chrome Web Store release
 
 ---
 
-🧪 Development
+🧠 Design Philosophy
 
-This project is currently being developed and tested using:
+🎯 Accuracy
 
-- Google Chrome
-- Brave Browser
+«Never invent data just to make a feature look impressive.»
 
-The project is actively evolving, so some features may change as development continues.
+🧩 Simplicity
+
+«Use simple technology and understand every layer.»
+
+🔒 Privacy
+
+«Your competitive programming history should remain yours.»
+
+📈 Progress
+
+«Every feature should help you understand your improvement.»
+
+---
+
+💡 Why I Built This
+
+Competitive programming isn't only about collecting Accepted verdicts.
+
+It's about understanding:
+
+🧠 How you think
+
+⏱️ How you spend time
+
+❌ Why you fail
+
+🏷️ Which topics challenge you
+
+📈 How you improve
+
+This project was created to make those patterns visible.
+
+At the same time, it is a practical way to learn:
+
+JavaScript → Browser Extensions → APIs → Storage → Data Modeling → Analytics → UI/UX → Git & GitHub
 
 ---
 
 🤝 Contributing
 
-Suggestions, bug reports, and improvements are welcome.
+Have an idea?
 
-If you find a problem or have an idea for a useful feature, feel free to open an Issue or submit a Pull Request.
+Found a bug?
+
+Want to improve something?
+
+You're welcome to contribute.
+
+💬 Suggestions
+
+Open an Issue and describe your idea.
+
+🐛 Bugs
+
+Include:
+
+- What happened
+- What you expected
+- Steps to reproduce
+- Browser + version
+
+🔧 Pull Requests
+
+Fork → Build → Test → Submit a PR.
 
 ---
 
 📜 License
 
-License information will be added when the project reaches a stable release.
+License information will be added before the first stable release.
 
 ---
 
-👨‍💻 Author
+<p align="center">⚡ Solve. Track. Analyze. Improve.
 
-Nafiul
+Built with ❤️, curiosity, and a lot of Codeforces problems.
 
-Built as a personal project to better understand Competitive Programming, JavaScript, Browser Extensions, and Software Development.
+<br>⭐ If this project becomes useful to you, consider giving it a star.
 
----
-
-«Solve. Track. Understand. Improve. ⚡»
+</p>
