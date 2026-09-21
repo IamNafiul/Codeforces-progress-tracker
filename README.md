@@ -128,30 +128,23 @@ You can analyze things like
 
 🎨 Dashboard
 
-The goal is to make your entire practice history understandable at a glance.
+<div align="center">📊 Track What Matters
 
-╭────────────────────────────────────────────────────╮
-│                                                    │
-│                YOUR PROGRESS                       │
-│                                                    │
-│       🟢 SOLVED          🔵 ATTEMPTED             │
-│          127                 184                   │
-│                                                    │
-│       🟣 STREAK          🟠 TOTAL TIME            │
-│        14 DAYS              42h 18m                │ 
-│                                                    │
-╰────────────────────────────────────────────────────╯
+🟩 Problems
+Solved · Attempted · Rating
 
-The dashboard should help answer:
+🟦 Submissions
+Accepted · Wrong Answer · TLE · Runtime Error
 
-🟣 What am I practicing?
+🟪 Topics
+Tags · Frequency · Weak Areas
 
-🔵 Where am I struggling?
+🟨 Practice
+Time Spent · Sessions · Streak
 
-🟠 How much time am I spending?
+<br>«Practice → Track → Analyze → Improve»
 
-🟢 Am I becoming more consistent?
-
+</div>
 ---
 
 🧩 How It Works
