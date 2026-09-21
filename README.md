@@ -1,163 +1,255 @@
-⚡ Codeforces Progress Tracker
+<div align="center">⚡ CODEFORCES PROGRESS TRACKER
 
-<p align="center">🧠 Turn Your Practice Into Progress
+🧠 Turn Your Practice Into Progress
 
-A colorful, privacy-first browser extension for tracking and understanding your Codeforces journey.
+A privacy-first browser extension built to help competitive programmers track, understand, and improve their Codeforces journey.
 
-<br>"Chrome" (https://img.shields.io/badge/Chrome-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)
-"Brave" (https://img.shields.io/badge/Brave-FB542B?style=for-the-badge&logo=brave&logoColor=white)
-"JavaScript" (https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-"Manifest V3" (https://img.shields.io/badge/Manifest-V3-8A2BE2?style=for-the-badge)
+<br><img src="https://img.shields.io/badge/Manifest_V3-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Manifest V3"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111827" alt="JavaScript"/>
+<img src="https://img.shields.io/badge/Chrome-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome"/>
+<img src="https://img.shields.io/badge/Brave-FB542B?style=for-the-badge&logo=brave&logoColor=white" alt="Brave"/><br><br>
 
-</p>---
+🟣 PRACTICE → 🔵 TRACK → 🟠 ANALYZE → 🟢 IMPROVE
 
-🌟 What Is This?
+</div>---
 
-Codeforces Progress Tracker is a browser extension built for competitive programmers who want to go beyond simply counting solved problems.
+🌈 What Is This?
 
-It transforms your Codeforces practice into meaningful insights:
+Codeforces Progress Tracker is a browser extension designed for competitive programmers who want to understand their practice instead of simply counting solved problems.
 
-«📝 Practice → 📊 Track → 🧠 Analyze → 🚀 Improve»
+It transforms your Codeforces activity into useful personal insights.
 
-Instead of asking:
+<div align="center">🧩 Solve
 
-"Am I actually getting better?"
+Practice problems and build your skills.
 
-you can look at your own data and find out.
+⬇️
 
----
+📊 Track
+
+Automatically record useful practice data.
+
+⬇️
+
+🧠 Analyze
+
+Discover your strengths, weaknesses, and patterns.
+
+⬇️
+
+🚀 Improve
+
+Use your own data to practice more intentionally.
+
+</div>---
 
 ✨ Features
 
-<table>
-<tr>
-<td width="50%">📚 Problem Tracking
+📚 Problem Tracking
 
-Automatically keep track of the problems you interact with.
+Keep a history of the problems you interact with.
 
-- 🆔 Problem information
-- ⭐ Rating
-- 🏷️ Tags
-- 👀 Visits
-- ⏱️ Time spent
-- 🔄 Practice sessions
+Tracks things such as
 
-</td><td width="50%">🎯 Submission Tracking
+🆔 Problem information
+⭐ Problem rating
+🏷️ Problem tags
+👀 Visits
+⏱️ Time spent
+🔄 Practice sessions
 
-Understand your submission history.
+---
 
-- ✅ Accepted
-- ❌ Wrong Answer
-- ⏱️ Time Limit Exceeded
-- 💥 Runtime Error
-- ⚠️ Other verdicts
+🎯 Submission Tracking
 
-</td>
-</tr><tr>
-<td>🧠 Failure Analysis
+Understand what happens when you submit a solution.
 
-Your mistakes become useful data.
+Possible verdicts include
 
-- 🔴 Common failure patterns
-- 🏷️ Difficult topics
-- 📝 Personal notes
-- 💭 Failure reasons
-- 📈 Improvement patterns
+🟢 Accepted
 
-</td><td>📊 Analytics
+🔴 Wrong Answer
 
-Turn your practice history into insights.
+🟡 Time Limit Exceeded
 
-- 📈 Rating distribution
-- 🏷️ Topic statistics
-- 🎯 Acceptance rate
-- 🔥 Practice streak
-- ⏱️ Time analysis
-- 📋 Recent activity
+🟠 Runtime Error
 
-</td>
-</tr>
-</table>---
+⚪ Other verdicts
+
+«The extension should only report submission information when it can detect it reliably.»
+
+---
+
+🧠 Failure Analysis
+
+Wrong answers are not just failures.
+
+They are data.
+
+You can record:
+
+💭 Why you struggled
+
+📝 What you misunderstood
+
+🔴 Why your solution failed
+
+💡 What you learned
+
+🎯 What you would do differently
+
+Over time, these notes can reveal patterns in your problem-solving.
+
+---
+
+📈 Progress Analytics
+
+Turn your practice history into meaningful statistics.
+
+You can analyze things like
+
+🟢 Problems solved
+
+🔵 Problems attempted
+
+🟣 Acceptance rate
+
+🟠 Rating distribution
+
+🔴 Verdict distribution
+
+🏷️ Topic statistics
+
+🔥 Practice streak
+
+⏱️ Time spent
+
+---
 
 🎨 Dashboard
 
-Your practice at a glance.
+The goal is to make your entire practice history understandable at a glance.
 
 ╭────────────────────────────────────────────────────╮
 │                                                    │
-│   🟢 SOLVED        🔵 ATTEMPTED       🟣 STREAK    │
-│      127              184              14 days     │
+│                YOUR PROGRESS                       │
 │                                                    │
-│   🟡 TIME           🔴 ACCEPTANCE     🏷️ TOPICS    │
-│   42h 18m              69%              18         │
+│       🟢 SOLVED          🔵 ATTEMPTED             │
+│          127                 184                   │
+│                                                    │
+│       🟣 STREAK          🟠 TOTAL TIME            │
+│        14 DAYS              42h 18m                │ 
 │                                                    │
 ╰────────────────────────────────────────────────────╯
 
-The dashboard is designed to answer questions like:
+The dashboard should help answer:
 
-«What am I practicing?»
+🟣 What am I practicing?
 
-«Where am I struggling?»
+🔵 Where am I struggling?
 
-«How much time am I spending?»
+🟠 How much time am I spending?
 
-«Am I becoming more consistent?»
+🟢 Am I becoming more consistent?
 
 ---
 
 🧩 How It Works
 
-          🌐 CODEFORCES
-                │
-                ▼
-        ┌───────────────┐
-        │ 👀 Detection  │
-        │ & Tracking    │
-        └───────┬───────┘
-                │
-                ▼
-        ┌───────────────┐
-        │ 🧠 Data Layer │
-        │ Parse & Store │
-        └───────┬───────┘
-                │
-                ▼
-        ┌───────────────┐
-        │ 💾 Local      │
-        │ Storage       │
-        └───────┬───────┘
-                │
-                ▼
-        ┌───────────────┐
-        │ 📊 Dashboard  │
-        │ & Analytics   │
-        └───────────────┘
+<div align="center">🌐 CODEFORCES
+
+⬇️
+
+👀 PAGE DETECTION
+
+⬇️
+
+🧠 DATA PROCESSING
+
+⬇️
+
+💾 LOCAL STORAGE
+
+⬇️
+
+📊 DASHBOARD
+
+</div>The extension observes relevant Codeforces pages, processes useful information, stores it locally, and presents it through a dedicated dashboard.
 
 ---
 
-🛠️ Tech Stack
+🛠️ Built With
 
-<p align="center">"HTML5" (https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-"CSS3" (https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-"JavaScript" (https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-"Chrome API" (https://img.shields.io/badge/Chrome_Extension_API-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)
+<div align="center"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111827"/>
+<img src="https://img.shields.io/badge/Chrome_API-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white"/></div>🧱 Architecture
 
-</p>Architecture
+Manifest V3
 
-- 🧩 Manifest V3
-- ⚡ Vanilla JavaScript
-- 🎨 HTML + CSS
-- 💾 Chrome Storage API
-- 🔒 Local-first architecture
+Modern browser extension architecture.
 
-Intentionally No
+Vanilla JavaScript
 
-❌ React
+No unnecessary framework overhead.
+
+Chrome Extension APIs
+
+Browser integration and extension functionality.
+
+Chrome Storage API
+
+Local persistence for practice data.
+
+---
+
+🚫 Intentionally No
+
+<div align="center">❌ React
+
 ❌ TypeScript
+
 ❌ Backend
+
 ❌ Database
+
 ❌ Authentication
-❌ Unnecessary external services
+
+❌ Unnecessary External Services
+
+</div>The goal is to keep the project lightweight, understandable, and focused on the fundamentals.
+
+---
+
+🏗️ Architecture
+
+                    ┌──────────────────┐
+                    │   CODEFORCES     │
+                    └────────┬─────────┘
+                             │
+                             ▼
+                  ┌─────────────────────┐
+                  │   CONTENT SCRIPT    │
+                  │  Detect & Observe   │
+                  └──────────┬──────────┘
+                             │
+                             ▼
+                  ┌─────────────────────┐
+                  │    DATA LAYER       │
+                  │ Parse & Normalize   │
+                  └──────────┬──────────┘
+                             │
+                             ▼
+                  ┌─────────────────────┐
+                  │   LOCAL STORAGE     │
+                  │   Chrome Storage    │
+                  └──────────┬──────────┘
+                             │
+                             ▼
+                  ┌─────────────────────┐
+                  │     DASHBOARD       │
+                  │ Analyze & Visualize │
+                  └─────────────────────┘
 
 ---
 
@@ -166,6 +258,7 @@ Intentionally No
 ⚡ codeforces-progress-tracker
 │
 ├── 📁 src
+│   │
 │   ├── 📁 popup
 │   │   ├── popup.html
 │   │   ├── popup.css
@@ -194,45 +287,82 @@ Intentionally No
 
 ---
 
+🔐 Privacy First
+
+<div align="center">🔒 YOUR PRACTICE DATA BELONGS TO YOU
+
+</div>🚫 No Account
+
+You don't need to create an account.
+
+🚫 No Backend
+
+Your data does not need to be sent to a server.
+
+🚫 No External Database
+
+Practice data is stored locally.
+
+🚫 No Advertising
+
+The extension is not built around advertisements.
+
+✅ Local First
+
+Your practice history stays in your browser by default.
+
+---
+
 🚀 Installation
 
 🟦 Chrome
 
-1. Download / Clone this repository
-2. Open chrome://extensions/
-3. Enable Developer Mode
-4. Click "Load unpacked"
-5. Select the project folder
-6. Open Codeforces
-7. Start solving 🚀
+01
+Clone or download this repository.
 
-🟧 Brave
+02
+Open:
 
-1. Open brave://extensions/
-2. Enable Developer Mode
-3. Click "Load unpacked"
-4. Select the project folder
-5. Open Codeforces
-6. Start solving 🚀
+"chrome://extensions/"
+
+03
+Enable Developer Mode.
+
+04
+Click Load unpacked.
+
+05
+Select the project folder containing "manifest.json".
+
+06
+Open Codeforces.
+
+07
+Start solving. 🚀
 
 ---
 
-🔐 Privacy
+🟧 Brave
 
-Your data belongs to you.
+01
+Open:
 
-The extension follows a local-first approach.
+"brave://extensions/"
 
-🔒| Privacy
-🚫| No account required
-🚫| No backend server
-🚫| No external database
-🚫| No advertising
-🚫| No unnecessary tracking
-✅| Local browser storage
-✅| Minimal permissions
+02
+Enable Developer Mode.
 
-Your practice history stays in your browser unless you explicitly export or share it.
+03
+Click Load unpacked.
+
+04
+Select the project folder containing "manifest.json".
+
+05
+Open Codeforces.
+
+06
+Start solving. 🚀
 
 ---
 
@@ -242,10 +372,12 @@ Your practice history stays in your browser unless you explicitly export or shar
 
 - [x] Manifest V3
 - [x] Extension structure
-- [x] Codeforces detection
-- [x] Development setup
+- [x] Codeforces page detection
+- [x] Development environment
 
-🟡 Tracking
+---
+
+🔵 Tracking
 
 - [ ] Problem detection
 - [ ] Problem metadata
@@ -256,7 +388,9 @@ Your practice history stays in your browser unless you explicitly export or shar
 - [ ] Verdict tracking
 - [ ] Local persistence
 
-🔵 Analytics
+---
+
+🟣 Analytics
 
 - [ ] Statistics dashboard
 - [ ] Rating distribution
@@ -266,11 +400,12 @@ Your practice history stays in your browser unless you explicitly export or shar
 - [ ] Practice streak
 - [ ] Progress trends
 
-🟣 Future
+---
+
+🟠 Future
 
 - [ ] Data export
-- [ ] Data backup
-- [ ] Import system
+- [ ] Backup and restore
 - [ ] Advanced visualizations
 - [ ] Performance improvements
 - [ ] Chrome Web Store release
@@ -279,45 +414,59 @@ Your practice history stays in your browser unless you explicitly export or shar
 
 🧠 Design Philosophy
 
-🎯 Accuracy
+<div align="center">🎯 ACCURACY
 
-«Never invent data just to make a feature look impressive.»
+Never fabricate data just to make a feature look impressive.
 
-🧩 Simplicity
+🧩 SIMPLICITY
 
-«Use simple technology and understand every layer.»
+Use simple technology and understand every layer.
 
-🔒 Privacy
+🔒 PRIVACY
 
-«Your competitive programming history should remain yours.»
+Your competitive programming history should remain yours.
 
-📈 Progress
+📈 USEFULNESS
 
-«Every feature should help you understand your improvement.»
+Every feature should provide meaningful insight.
 
----
+</div>---
 
 💡 Why I Built This
 
-Competitive programming isn't only about collecting Accepted verdicts.
+Competitive programming isn't just about collecting Accepted verdicts.
 
 It's about understanding:
 
 🧠 How you think
 
-⏱️ How you spend time
-
 ❌ Why you fail
+
+⏱️ Where your time goes
 
 🏷️ Which topics challenge you
 
-📈 How you improve
+📈 Whether your practice is actually improving you
 
-This project was created to make those patterns visible.
+This project makes those patterns visible.
 
-At the same time, it is a practical way to learn:
+It is also a practical way to learn:
 
-JavaScript → Browser Extensions → APIs → Storage → Data Modeling → Analytics → UI/UX → Git & GitHub
+JavaScript
+     ↓
+Browser Extensions
+     ↓
+Browser APIs
+     ↓
+Local Storage
+     ↓
+Data Modeling
+     ↓
+Analytics
+     ↓
+UI / UX
+     ↓
+Git & GitHub
 
 ---
 
@@ -331,22 +480,32 @@ Want to improve something?
 
 You're welcome to contribute.
 
-💬 Suggestions
-
-Open an Issue and describe your idea.
-
-🐛 Bugs
+🐛 Bug Reports
 
 Include:
 
 - What happened
 - What you expected
 - Steps to reproduce
-- Browser + version
+- Browser and version
+
+💡 Feature Ideas
+
+Explain:
+
+- The problem
+- Your proposed solution
+- Why it would be useful
 
 🔧 Pull Requests
 
-Fork → Build → Test → Submit a PR.
+Fork
+  ↓
+Build
+  ↓
+Test
+  ↓
+Pull Request
 
 ---
 
@@ -356,10 +515,10 @@ License information will be added before the first stable release.
 
 ---
 
-<p align="center">⚡ Solve. Track. Analyze. Improve.
+<div align="center">⚡ Solve. Track. Analyze. Improve.
 
-Built with ❤️, curiosity, and a lot of Codeforces problems.
+Built with ❤️, curiosity, and countless Codeforces problems.
 
-<br>⭐ If this project becomes useful to you, consider giving it a star.
+<br>⭐ Star the repository if you find the project interesting.
 
-</p>
+</div>
