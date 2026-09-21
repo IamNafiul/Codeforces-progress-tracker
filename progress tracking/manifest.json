@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "name": "Codeforces Progress Tracker",
+  "version": "1.0.0",
+  "description": "Lightweight, privacy-first automatic problem-solving tracker and analytics dashboard for competitive programmers on Codeforces.",
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "assets/icon16.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    },
+    "default_title": "Codeforces Tracker"
+  },
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "*://codeforces.com/*",
+    "*://www.codeforces.com/*"
+  ],
+  "background": {
+    "service_worker": "src/background/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://codeforces.com/problemset/problem/*",
+        "*://codeforces.com/contest/*/problem/*",
+        "*://codeforces.com/gym/*/problem/*",
+        "*://codeforces.com/group/*/contest/*/problem/*",
+        "*://www.codeforces.com/problemset/problem/*",
+        "*://www.codeforces.com/contest/*/problem/*",
+        "*://www.codeforces.com/gym/*/problem/*",
+        "*://www.codeforces.com/group/*/contest/*/problem/*"
+      ],
+      "js": [
+        "src/utils/helpers.js",
+        "src/utils/codeforces.js",
+        "src/utils/storage.js",
+        "src/content/content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

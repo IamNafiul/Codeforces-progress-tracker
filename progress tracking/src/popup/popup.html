@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codeforces Tracker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <!-- Header -->
+    <header class="popup-header">
+      <div class="brand">
+        <img src="../../assets/icon16.png" alt="Logo" class="brand-icon">
+        <span class="brand-title">CF Tracker</span>
+      </div>
+      <button id="btn-header-dashboard" class="icon-btn" title="Open Full Dashboard">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="7" height="9"></rect>
+          <rect x="14" y="3" width="7" height="5"></rect>
+          <rect x="14" y="12" width="7" height="9"></rect>
+          <rect x="3" y="16" width="7" height="5"></rect>
+        </svg>
+      </button>
+    </header>
+
+    <!-- State 1: Active Problem Tracked -->
+    <main id="state-problem" class="view-state hidden">
+      <div class="problem-meta-card">
+        <span class="section-tag">CURRENT PROBLEM</span>
+        <h2 id="prob-title" class="prob-title">A. Watermelon</h2>
+        
+        <div class="badge-row">
+          <span id="prob-rating-badge" class="badge badge-rating">800 Rating</span>
+          <span id="prob-contest-badge" class="badge badge-subtle">Contest 4</span>
+          <span id="prob-submissions-badge" class="badge badge-subtle">0 Attempts</span>
+        </div>
+      </div>
+
+      <!-- Live Tracking Card -->
+      <div class="timer-card">
+        <div class="timer-header">
+          <span class="timer-label">Time on Problem</span>
+          <div id="tracking-status-pill" class="status-pill status-active">
+            <span class="pulse-dot"></span>
+            <span id="tracking-status-text">Tracking</span>
+          </div>
+        </div>
+        <div id="timer-display" class="timer-display">00:00</div>
+      </div>
+
+      <!-- Quick Status Controls -->
+      <div class="quick-controls">
+        <label class="control-label">Status</label>
+        <div class="status-button-group">
+          <button type="button" class="status-btn" data-status="visiting">Visiting</button>
+          <button type="button" class="status-btn" data-status="attempted">Attempted</button>
+          <button type="button" class="status-btn" data-status="solved">Solved</button>
+        </div>
+      </div>
+
+      <!-- Optional Note & Failure Reason Accordion -->
+      <details class="notes-accordion" id="notes-accordion">
+        <summary class="notes-summary">
+          <span>Notes & Failure Reason</span>
+          <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </summary>
+        <div class="notes-body">
+          <div class="form-group">
+            <label for="select-failure-reason" class="control-label">Why I got stuck (optional)</label>
+            <select id="select-failure-reason" class="select-input">
+              <option value="">-- None --</option>
+              <option value="Couldn't understand">Couldn't understand</option>
+              <option value="Couldn't find approach">Couldn't find approach</option>
+              <option value="Didn't know the concept">Didn't know the concept</option>
+              <option value="Coding error">Coding error</option>
+              <option value="Time Limit Exceeded">Time Limit Exceeded</option>
+              <option value="Wrong Answer">Wrong Answer</option>
+              <option value="Silly mistake">Silly mistake</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="input-personal-note" class="control-label">Personal Note (optional)</label>
+            <textarea id="input-personal-note" class="textarea-input" rows="2" placeholder="e.g. Used frequency array instead of nested loops..."></textarea>
+          </div>
+          <button type="button" id="btn-save-notes" class="btn btn-secondary btn-sm">Save Note</button>
+          <span id="note-saved-msg" class="save-feedback">Saved!</span>
+        </div>
+      </details>
+
+      <div class="footer-actions">
+        <button id="btn-open-dashboard" class="btn btn-primary">Open Dashboard</button>
+      </div>
+    </main>
+
+    <!-- State 2: No Problem Detected -->
+    <main id="state-no-problem" class="view-state hidden">
+      <div class="empty-state-box">
+        <div class="empty-icon">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polygon points="12 8 8 12 12 16 12 8"></polygon>
+            <polygon points="16 12 12 16 12 8 16 12"></polygon>
+          </svg>
+        </div>
+        <h3 id="empty-title">No Codeforces problem detected.</h3>
+        <p id="empty-desc">Open a problem on Codeforces to start tracking your time and progress automatically.</p>
+      </div>
+
+      <div class="footer-actions">
+        <button id="btn-open-codeforces" class="btn btn-primary">Open Codeforces</button>
+        <button id="btn-empty-dashboard" class="btn btn-secondary">Open Dashboard</button>
+      </div>
+    </main>
+  </div>
+
+  <!-- Script dependencies loaded in order -->
+  <script src="../utils/helpers.js"></script>
+  <script src="../utils/codeforces.js"></script>
+  <script src="../utils/storage.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
