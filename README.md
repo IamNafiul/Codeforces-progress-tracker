@@ -246,39 +246,44 @@ Local persistence for practice data.
 
 ---
 
-📂 Project Structure
+📁 Project Structure
 
-⚡ codeforces-progress-tracker
+codeforces-progress-tracker/
 │
-├── 📁 src
-│   │
-│   ├── 📁 popup
-│   │   ├── popup.html
-│   │   ├── popup.css
-│   │   └── popup.js
-│   │
-│   ├── 📁 content
-│   │   └── content.js
-│   │
-│   ├── 📁 dashboard
-│   │   ├── dashboard.html
-│   │   ├── dashboard.css
-│   │   └── dashboard.js
-│   │
-│   └── 📁 utils
-│       ├── storage.js
-│       ├── codeforces.js
-│       └── helpers.js
+├── 📄 manifest.json
+├── 📖 README.md
 │
-├── 📁 assets
+├── 🎨 assets/
 │   ├── icon16.png
 │   ├── icon48.png
 │   └── icon128.png
 │
-├── 📄 manifest.json
-└── 📄 README.md
+└── ⚙️ src/
+    ├── popup/
+    │   ├── popup.html
+    │   ├── popup.css
+    │   └── popup.js
+    │
+    ├── content/
+    │   └── content.js
+    │
+    ├── dashboard/
+    │   ├── dashboard.html
+    │   ├── dashboard.css
+    │   └── dashboard.js
+    │
+    └── utils/
+        ├── storage.js
+        ├── codeforces.js
+        └── helpers.js
 
----
+🧩 What's Where?
+
+🟦 popup/ — Extension popup & quick stats
+🟩 content/ — Codeforces page detection & tracking
+🟪 dashboard/ — Analytics & progress visualization
+🟨 utils/ — Storage, API logic & reusable helpers
+🟥 assets/ — Extension icons & visual assets
 
 🔐 Privacy First
 
